@@ -18,8 +18,8 @@ var lineDescription = ""
 if (line.length < 1){
   return "The line is currently empty."
 } else {
-  for (var i = 0; i < katzDeli.length; i++){
-    lineDescription += (i)+1 + ". "+ katzDeli[i] + ","
+  for (var i = 0; i < line.length; i++){
+    lineDescription += (i)+1 + ". "+ line[i] + ","
   }
 
 }
