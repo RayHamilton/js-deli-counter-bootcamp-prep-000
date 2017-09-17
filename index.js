@@ -6,20 +6,20 @@ function takeANumber(katzDeli, name){
 }
 
 function nowServing(){
-  if (katzDeliLine.length  ==[]){
+  if (katzDeli.length  ==[]){
     return "There is nobody waiting to be served!"
   } else {
-    return katzDeliLine.shift()
+    return katzDeli.shift()
   }
 }
 
 function currentLine(){
 var lineDescription = ""
-if (katzDeliLine == []){
+if (katzDeli == []){
   return "The line is currently empty."
 } else {
-  for (var i = 0; i < katzDeliLine.length; i++){
-    lineDescription += (i)+1 + ". "+ katzDeliLine[i] + ","
+  for (var i = 0; i < katzDeli.length; i++){
+    lineDescription += (i)+1 + ". "+ katzDeli[i] + ","
   }
 
 }
