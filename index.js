@@ -13,9 +13,9 @@ function nowServing(){
   }
 }
 
-function currentLine(){
+function currentLine(line){
 var lineDescription = ""
-if (katzDeli.length < 1){
+if (line.length < 1){
   return "The line is currently empty."
 } else {
   for (var i = 0; i < katzDeli.length; i++){
